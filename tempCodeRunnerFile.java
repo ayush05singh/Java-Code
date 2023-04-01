@@ -1,3 +1,2 @@
-  // System.out.println(b);
-        // System.out.println(str1);
-        // System.out.println(str2);
+ // var d=sc.nextLine();
+        // System.out.println(d.matches("^\\d{2}/\\d{2}/\\d{4}$"));
