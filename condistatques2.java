@@ -80,7 +80,7 @@ public class condistatques2
     {
         System.out.println("http -------> hyper text transfer protocal");
     }
-    else if (protocol=="ftp")
+    else if (protocol.equals("ftp"))
     {
         System.out.println("ftp -------> file transfer protocol");
     }
@@ -89,11 +89,11 @@ public class condistatques2
         System.out.println("Error!!! Check your input.");
     }
 
-    if (domain=="com")
+    if (domain.equals("com"))
     {
         System.out.println("com -------> Commercial");
     }
-    else if (domain=="org")
+    else if (domain.equals("org"))
     {
         System.out.println("org -------> Organization");
     }
