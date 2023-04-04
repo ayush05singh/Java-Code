@@ -34,25 +34,28 @@ public class switchques
 
         String opt;
         int a, b,c;
+    
         System.out.println("Enter 'a' & 'b' respectively = ");
         a=sc.nextInt();
         b= sc.nextInt();
+        sc.nextLine(); //ise use iseliya kiya hai kyuki jab ham "opt" ka liya input lenga to a&b wala command uska buffer mai hai, to clear memory we use this.
 
         System.out.print("Enter your option = ");
         opt=sc.nextLine();
+
         switch(opt)
         {
             case "add": c= a+b;
-                        System.out.println("Sum of "+a+ "&" +b +"is"+c);
+                        System.out.println("Sum of "+a+ " & " +b +" is "+c + ".");
                         break;
             case "sub": c= a-b;
-                        System.out.println("Sum of "+a+ "&" +b +"is"+c);
+                        System.out.println("Sum of "+a+ " & " +b +" is "+c+ ".");
                         break;
             case "mult": c= a*b;
-                        System.out.println("Sum of "+a+ "&" +b +"is"+c);
+                        System.out.println("Sum of "+a+ " & " +b +" is "+c+ ".");
                         break;
             case "div": c= a/b;
-                        System.out.println("Sum of "+a+ "&" +b +"is"+c);
+                        System.out.println("Sum of "+a+ " & " +b +" is "+c+ ".");
                         break;
             case "rem": c= a%b;
                         System.out.println("Sum of "+a+ "&" +b +"is"+c);
