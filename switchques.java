@@ -63,7 +63,11 @@ public class switchques
             default:  System.out.println("Check your input!!!");
                         break;
 
+         
+
         }
+        
+        sc.close();
 
 
     }
