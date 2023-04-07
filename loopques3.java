@@ -1,5 +1,18 @@
-char c;
-        for(int i=str.length()-1;i>=0;i--)
+import java.util.*;
+
+
+public class loopques3 
+{
+    public static void main(String arg[])
+
+    {
+        Scanner sc=new Scanner(System.in);
+        
+        System.out.print("Enter a Number = ");
+        String str=sc.nextLine();
+        
+        char c;
+        for(int i=0;i<str.length();i++)
         {
             c=str.charAt(i);
             switch(c)
@@ -26,5 +39,25 @@ char c;
                         break;
                        
             }
-            
+   // ----------------------------------------------------------------------------------------------------------- //
+   
+//         System.out.println("Enter value of 'a' = ");
+//         int a = sc.nextInt();
+//         System.out.println("Enter value of 'd' = ");
+//         int d = sc.nextInt();
+//         System.out.println("Enter value of 'n' = ");
+//         int n = sc.nextInt();
+
+//         for ()
+
+
+
+
+
+            sc.close();
+
         }
+    }
+    
+}
+
