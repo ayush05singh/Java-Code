@@ -42,13 +42,13 @@ public class loopques3
         // }
    // ----------------------------------------------------------------------------------------------------------- //
    
-        System.out.print("Enter value of 'a' = ");
-        int a = sc.nextInt();
-        System.out.print("Enter value of 'd' = ");
-        int d = sc.nextInt();
-        System.out.print("Enter value of 'n' = ");
-        int n = sc.nextInt();
-        String str="";
+        // System.out.print("Enter value of 'a' = ");
+        // int a = sc.nextInt();
+        // System.out.print("Enter value of 'd' = ");
+        // int d = sc.nextInt();
+        // System.out.print("Enter value of 'n' = ");
+        // int n = sc.nextInt();
+        // String str="";
         
         // for A.P. given below:-
         // for (int i=0;i<n;i++)
@@ -61,10 +61,31 @@ public class loopques3
         // System.out.print(str+",");
 
         // for G.P. given below:-
-        for (int i=0;i<n;i++)
+        // for (int i=0;i<n;i++)
+        // {
+        //         System.out.print(a+",");
+        //         a=a*d;
+        // }
+
+// ------------------------------------------- for fibonnaci series ----------------------------------------------------- //
+
+        System.out.print("Enter value of zeroth term = ");
+        int a = sc.nextInt();
+        System.out.print("Enter value of first term = ");
+        int d = sc.nextInt();
+        System.out.print("Enter value of 'n' = ");
+        int n= sc.nextInt();
+
+        System.out.print(a+",");
+        System.out.print(d+",");
+
+
+        for (int i=0;i<(n-2);i++)
         {
-                System.out.print(a+",");
-                a=a*d;
+            int c=a+d;
+            a=d;
+            d=c;
+            System.out.print(c+",");
         }
 
         sc.close();
