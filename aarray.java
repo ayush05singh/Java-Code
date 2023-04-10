@@ -3,7 +3,7 @@ public class aarray
 {
     public static void main(String[] args) 
     {
-        int a[] = {14,9,7,8,12,13,18,25,26,15};
+        // int a[] = {14,9,7,8,12,13,18,25,26,15};
         // int sum = 0;
 
         // for(int i=0;i<=a.length-1;i++)
@@ -58,26 +58,41 @@ public class aarray
 // ------------------------------------------------------------------------------------------------- //
 
       
-        int temp2 = a[a.length-1];
-        System.out.print("Original array: ");
+        // int temp2 = a[a.length-1];
+        // System.out.print("Original array: ");
+        // for(int x:a)
+        // {System.out.print(x+",");}
+
+        // int l=a.length-1;
+        // for(int i=a.length;i>1;i--)
+        // {
+        //     a[l]=a[l-1];
+        //     l--;
+        // }
+        // a[0]=temp2;
+        // System.out.println("");
+       
+        // System.out.print("Shifted array: ");
+        // for(int x:a)
+        // {    
+        //     System.out.print(x+",");
+        // }
+        
+// -------------------------------------------------------------------------------------------------------------- //
+
+        int a[] = new int[10];
+        
+        a[0]=5;   a[1]=9;   a[2]=6;
+        a[3]=10;  a[4]=12;  a[5]=7;
+        int l=a.length-1;
+        for (int i=a.length;i>3;i--)
+        {   
+            a[l]=a[l-1];
+            
+        }        
+        a[2]=33;
         for(int x:a)
         {System.out.print(x+",");}
-
-        int l=a.length-1;
-        for(int i=a.length;i>1;i--)
-        {
-            a[l]=a[l-1];
-            l--;
-        }
-        a[0]=temp2;
-        System.out.println("");
-       
-        System.out.print("Shifted array: ");
-        for(int x:a)
-        {    
-            System.out.print(x+",");
-        }
-        
         sc.close();
 
     }
