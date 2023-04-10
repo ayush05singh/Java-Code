@@ -80,19 +80,32 @@ public class aarray
         
 // -------------------------------------------------------------------------------------------------------------- //
 
-        int a[] = new int[10];
+      
         
-        a[0]=5;   a[1]=9;   a[2]=6;
-        a[3]=10;  a[4]=12;  a[5]=7;
-        int l=a.length-1;
-        for (int i=a.length;i>3;i--)
-        {   
-            a[l]=a[l-1];
-            
-        }        
-        a[2]=33;
-        for(int x:a)
-        {System.out.print(x+",");}
+        int a[]=new int[8];
+		a[0]=2;a[1]=5;a[2]=10;a[3]=7;a[4]=13;
+		int n=5;
+		
+		System.out.print("Array = ");
+		
+		for (int i=0;i<n;i++)
+		{System.out.print(a[i]+",");}
+		
+		int index = 3;
+		
+		System.out.println("");
+		
+		for (int i=n;i>index;i--)
+		{
+		    a[i]=a[i-1];
+		}
+		a[index]=58;
+		System.out.print("New Array = ");
+		
+		for (int i=0;i<n+1;i++)
+		{System.out.print(a[i]+",");}
+		
+        
         sc.close();
 
     }
