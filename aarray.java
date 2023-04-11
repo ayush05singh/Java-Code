@@ -127,26 +127,50 @@ public class aarray
 
                                 /* Reverse copying an array */
 
-        int p[]=new int[9];
-        int m[]={2,4,10,11,5,7,15,46,3};
+        // int p[]=new int[9];
+        // int m[]={2,4,10,11,5,7,15,46,3};
+        // System.out.print("Input array = ");
+        // for (int x:m)
+        // {System.out.print(x+",");}
+
+        // int i,l=0;
+        //  for(i=8;i>=0;i--)
+        // {
+        //     // int temp = m[l];
+        //     p[l]=m[i];
+        //     // m[i]=temp;
+        //     l++;          
+        // }
+        // System.out.println("");
+        // System.out.print("New array = ");
+        // for (int x:p)
+        // {System.out.print(x+",");}
+
+// --------------------------------------------------------------------------------------- //
+        int m[]={2,4,10,11,5,7,15,46,3};        
+        int p[]=new int[18];
+        
         System.out.print("Input array = ");
         for (int x:m)
         {System.out.print(x+",");}
 
         int i,l=0;
-         for(i=8;i>=0;i--)
+        for(i=0;i<m.length;i++)
         {
-            // int temp = m[l];
-            p[l]=m[i];
-            // m[i]=temp;
-            l++;          
+            p[i]=m[i];
         }
+
+        m=p;
+      
         System.out.println("");
         System.out.print("New array = ");
         for (int x:p)
         {System.out.print(x+",");}
+
+        System.out.println("");
+        System.out.print("Length of array 'm' = "+m.length);
             
-        sc.close();
+    sc.close();
 
     }
     
