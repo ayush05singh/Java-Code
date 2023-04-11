@@ -82,30 +82,70 @@ public class aarray
 
       
         
-        int a[]=new int[8];
-		a[0]=2;a[1]=5;a[2]=10;a[3]=7;a[4]=13;
-		int n=5;
+        // int a[]=new int[8];
+		// a[0]=2;a[1]=5;a[2]=10;a[3]=7;a[4]=13;
+		// int n=5;
 		
-		System.out.print("Array = ");
+		// System.out.print("Array = ");
 		
-		for (int i=0;i<n;i++)
-		{System.out.print(a[i]+",");}
+		// for (int i=0;i<n;i++)
+		// {System.out.print(a[i]+",");}
 		
-		int index = 3;
+		// int index = 3;
 		
-		System.out.println("");
+		// System.out.println("");
 		
-		for (int i=n;i>index;i--)
-		{
-		    a[i]=a[i-1];
-		}
-		a[index]=58;
-		System.out.print("New Array = ");
+		// for (int i=n;i>index;i--)
+		// {
+		//     a[i]=a[i-1];
+		// }
+		// a[index]=58;
+		// System.out.print("New Array = ");
 		
-		for (int i=0;i<n+1;i++)
-		{System.out.print(a[i]+",");}
+		// for (int i=0;i<n+1;i++)
+		// {System.out.print(a[i]+",");}
 		
-        
+// ----------------------------------------------------------------------------------------------------------------- //
+                                /* Copying an array */
+
+        // int m[]={2,4,10,11,5,7,15,46,3};
+        // int n[]=new int[9];
+        // int i;
+        // System.out.print("Input array = ");
+        // for (int x:m)
+        // {System.out.print(x+",");}
+
+        // for(i=0;i<m.length;i++)
+        // {
+        //     n[i]=m[i];
+
+        // }
+        // System.out.println("");
+        // System.out.print("New array = ");
+        // for (int x:n)
+        // {System.out.print(x+",");}
+
+                                /* Reverse copying an array */
+
+        int p[]=new int[9];
+        int m[]={2,4,10,11,5,7,15,46,3};
+        System.out.print("Input array = ");
+        for (int x:m)
+        {System.out.print(x+",");}
+
+        int i,l=0;
+         for(i=8;i>=0;i--)
+        {
+            // int temp = m[l];
+            p[l]=m[i];
+            // m[i]=temp;
+            l++;          
+        }
+        System.out.println("");
+        System.out.print("New array = ");
+        for (int x:p)
+        {System.out.print(x+",");}
+            
         sc.close();
 
     }
